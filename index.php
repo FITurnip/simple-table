@@ -5,18 +5,8 @@ $username = "aspraklabjarkom";
 $password = ""; 
 $dbname = "content_db"; 
 
-// Enable error reporting
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-echo "Attempting to connect to the database...<br>";
-
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-// if ($conn->connect_error) {
-//     die("Connection failed: " . $conn->connect_error);
-// }
 
 // Fetch contents from the database
 $sql = "SELECT id, content FROM contents";
