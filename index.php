@@ -1,9 +1,14 @@
 <?php
 // Database connection settings
-$servername = "localhost"; // or your server name
-$username = "aspraklabjarkom"; // your MySQL username
-$password = ""; // your MySQL password
-$dbname = "content_db"; // your database name
+$servername = "localhost"; 
+$username = "aspraklabjarkom"; 
+$password = ""; 
+$dbname = "content_db"; 
+
+// Enable error reporting
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+echo "Attempting to connect to the database...<br>";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
