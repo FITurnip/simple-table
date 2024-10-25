@@ -9,9 +9,9 @@ $dbname = "content_db"; // your database name
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// }
 
 // Fetch contents from the database
 $sql = "SELECT id, content FROM contents";
