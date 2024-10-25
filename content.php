@@ -36,6 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['content'])) {
 // Close the connection
 $conn->close();
 
-// Redirect back to index.html
-header("Location: index.html");
+// Redirect back to 
+header("Location: ./");
 exit();
